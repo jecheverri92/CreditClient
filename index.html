@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Solicitud Prestamo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Solicitud Credito
+          <span class="icon icon-header">
+            <i class="far fa-money-bill-alt"></i>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <br>
+    <div class="columns is-mobile is-centered">
+      <div class="column is-half">
+        <div class="field">
+          <label class="label">Nombre:</label>
+          <div class="control">
+            <input id="id-nombre" class="input" type="text" placeholder="Nombre del Cliente" required='true'>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Tipo Cliente:</label>
+          <p class="control has-icons-left">
+            <span class="select">
+              <select id="id-client-type">
+                <option selected>--</option>
+                <option>AAA</option>
+                <option>AA</option>
+                <option>A</option>
+              </select>
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user-tag"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
+          <label class="label">Salario:</label>
+          <div class="control has-icons-left">
+            <input  id="id-salario" class="input" type="number" placeholder="Salario" value="0">
+            <span class="icon is-small is-left">
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Valor del credito Solicitado:</label>
+          <div class="control has-icons-left">
+            <input  id= "id-credito-value" class="input" type="number" placeholder="Valor Credito" value="0">
+            <span class="icon is-small is-left">
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button id="solicitar-button" class="button is-link">Solicitar</button>
+          </div>
+        </div>
+        <div id="mensaje">
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Julian Echeverri R. </strong> NetW Consulting - 2020.
+    </p>
+  </div>
+</footer>
+
+
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
